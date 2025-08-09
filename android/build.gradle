@@ -1,0 +1,30 @@
+group 'com.google_api_headers'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.1.1'
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    namespace "com.google_api_headers"
+    compileSdkVersion 33
+
+    defaultConfig {
+        minSdkVersion 21
+    }
+}
